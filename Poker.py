@@ -2,7 +2,7 @@ import random
 
 card_order_dict = {"2": 2, "3": 3, "4": 4, "5": 5, "6": 6, "7": 7, "8": 8, "9": 9, "10": 10, "J": 11, "Q": 12, "K": 13,
                    "A": 14}  # stores rank of each card value
-suits = ['C', 'H', 'A', 'S']  # All possible suits C-Clubs,H-Hearts,A-Ace,S-Spades, CHASed order is used as a nod for
+suits = ['C', 'H',  'S', 'D']  # All possible suits C-Clubs,H-Hearts,A-Ace,S-Spades, CHASed order is used as a nod for
 # my fellow magic enthusiasts
 values = ['A', '2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K']  # All possible values
 drawn_cards = []  # list to store all drawn cards
