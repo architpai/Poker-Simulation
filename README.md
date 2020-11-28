@@ -1,3 +1,4 @@
+# Poker Simulation
 ## Introduction:
 The app uses random Module to generate, table cards, hands of players and function which can determine winnner of various possible winning condition such as Royal Flush, Four of a kind,Straights etc.I have included comments along with the code
 
