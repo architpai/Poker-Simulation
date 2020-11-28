@@ -30,14 +30,14 @@ The above function generates a card at random using `random.choice()` which take
 the card is generated in the form of "suit-value" Eg: D-10 is 10 of Diamonds.
 It then checks for that card in `drawn_cards` if its unique the card is returned else a new card is generated until a unique one is generated.
 ### Below are its uses:
-1.Table hands 
+ 1.Table hands 
 ```
 # Generates 5 cards for the Table
 def table_hand():
     for i in range(0, 5):
         table_cards.append(generate_card())
  ```
-2. Player hands
+ 2. Player hands
 ```
 # Generates Card for each player
 def player_hand(number_of_players):
@@ -50,7 +50,7 @@ def player_hand(number_of_players):
 ```
 The Player hands are stored in the `Player_Dict`.
 ## Check functions:
-###1. Flush
+### 1. Flush
 ```
 def check_flush(number_of_players):
     list_of_flush = []  # maintains list of player with active Flush hand
@@ -63,7 +63,7 @@ def check_flush(number_of_players):
     return list_of_flush
 
 ```
-###2. Staright 
+### 2. Staright 
 ```
 def check_straight(number_of_players):
     list_of_straight = []  # maintains list of player with straight hand
@@ -83,7 +83,7 @@ def check_straight(number_of_players):
     return list_of_straight
 
 ```
-###3. Staright flush
+### 3. Staright flush
 ```
 def check_straight_flush(number_of_players):
     list_of_straight_flush = []  # maintains list of player with straight flush
@@ -94,7 +94,7 @@ def check_straight_flush(number_of_players):
         list_of_straight_flush += intersect
     return list_of_straight_flush
 ```
-###4. Royal flush
+### 4. Royal flush
 ```
 def check_royal_flush(number_of_players):
     list_of_royal_flush = []
@@ -112,7 +112,7 @@ def check_royal_flush(number_of_players):
                         list_of_royal_flush += [f'Player{i}']
     return list_of_royal_flush
 ```
-###5. Four of a kind
+### 5. Four of a kind
 ```
 def check_four_of_a_kind(number_of_players):
     list_of_four_of_a_kind = []
@@ -126,7 +126,7 @@ def check_four_of_a_kind(number_of_players):
                 list_of_four_of_a_kind += [f'Player{i}']
     return list_of_four_of_a_kind
 ```
-###6. Full house
+### 6. Full house
 ```
 def check_full_house(number_of_players):
     list_of_full_house = []
@@ -147,7 +147,7 @@ def check_full_house(number_of_players):
             list_of_full_house += [f'Player{i}']
     return list_of_full_house
 ```
-###7. Three of a kind
+### 7. Three of a kind
 ```
 def check_three_of_kind(number_of_players):
     list_of_three_of_kind = []
@@ -162,7 +162,7 @@ def check_three_of_kind(number_of_players):
     return list_of_three_of_kind
 
 ```
-###8. Two pair
+### 8. Two pair
 ```
 def check_two_pair(number_of_players):
     list_of_two_pair = []
@@ -179,7 +179,7 @@ def check_two_pair(number_of_players):
             list_of_two_pair += [f'Player{i}']
     return list_of_two_pair
 ```
-###9. pair
+### 9. pair
 ```
 def check_pair(number_of_players):
     list_of_pair = []
@@ -195,7 +195,7 @@ def check_pair(number_of_players):
             list_of_pair += [f'Player{i}']
     return list_of_pair
 ```
-###10.high card
+### 10.high card
 ```
 def check_highcard(number_of_players, eligible_player_list):
     highcard = 0
