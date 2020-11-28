@@ -62,7 +62,7 @@ def check_straight(number_of_players):
             for z in range(0, len(rank_values) - 4):
                 if rank_values[z + 4] - rank_values[z] == 4:
                     list_of_straight += [f'Player{i}']
-                elif rank_values == [2, 3, 4, 5, 13]:  # condition for A 1 2 3 4
+                elif rank_values == [2, 3, 4, 5, 14]:  # condition for A 1 2 3 4
                     list_of_straight += [f'Player{i}']
     return list_of_straight
 
