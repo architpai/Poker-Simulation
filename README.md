@@ -30,14 +30,14 @@ The above function generates a card at random using `random.choice()` which take
 the card is generated in the form of "suit-value" Eg: D-10 is 10 of Diamonds.
 It then checks for that card in `drawn_cards` if its unique the card is returned else a new card is generated until a unique one is generated.
 ### Below are its uses:
- 1.Table hands 
+#### 1.Table hands 
 ```
 # Generates 5 cards for the Table
 def table_hand():
     for i in range(0, 5):
         table_cards.append(generate_card())
  ```
- 2. Player hands
+#### 2. Player hands
 ```
 # Generates Card for each player
 def player_hand(number_of_players):
