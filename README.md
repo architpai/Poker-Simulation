@@ -64,7 +64,7 @@ def check_flush(number_of_players):
     return list_of_flush
 
 ```
-### 2. Staright 
+### 2. Straight 
 ```
 def check_straight(number_of_players):
     list_of_straight = []  # maintains list of player with straight hand
